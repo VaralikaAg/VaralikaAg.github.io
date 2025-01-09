@@ -18,7 +18,7 @@ export function Contact() {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setIsSubmitting(false);
-    setSubmitMessage("Thank you for your message. I'll get back to you soon!");
+    setSubmitMessage("Thank you for your message. I&apos;ll get back to you soon!");
   };
 
   return (
@@ -32,7 +32,7 @@ export function Contact() {
         >
           <Card className="bg-zinc-900 border-zinc-800">
             <CardHeader>
-              <CardTitle>Let's Connect</CardTitle>
+              <CardTitle>Let&apos;s Connect</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
