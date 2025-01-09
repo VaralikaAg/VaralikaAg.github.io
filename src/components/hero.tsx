@@ -14,7 +14,7 @@ export function Hero() {
         <h1 className="text-6xl font-bold tracking-tight">
           Hi,
           <br />
-          I'm Varalika,
+          I&apos;m Varalika,
           <br />
           <span className="text-zinc-400">Mathematics & Computing Student</span>
         </h1>
