@@ -17,18 +17,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="fixed top-4 right-4 z-50">
-            <ThemeToggle />
+          <div className="min-h-screen bg-background">
+            <div className="fixed top-4 right-4 z-50">
+              <ThemeToggle />
+            </div>
+            {children}
           </div>
-          {children}
         </ThemeProvider>
       </body>
     </html>

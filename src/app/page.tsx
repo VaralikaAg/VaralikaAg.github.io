@@ -6,10 +6,12 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
       <Nav />
-      <div className="ml-24">
-        <Hero />
+      <div className="ml-24 px-8">
+        <section id="home">
+          <Hero />
+        </section>
         <Education />
         <Projects />
         <Contact />

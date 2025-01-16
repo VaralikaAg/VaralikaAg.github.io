@@ -18,11 +18,11 @@ export function Contact() {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setIsSubmitting(false);
-    setSubmitMessage("Thank you for your message. I&apos;ll get back to you soon!");
+    setSubmitMessage("Thank you for your message. I'll get back to you soon!");
   };
 
   return (
-    <section className="min-h-screen pl-32 pr-8 py-24">
+    <section id="contact" className="min-h-screen py-24">
       <h2 className="text-3xl font-bold mb-8">Contact</h2>
       <div className="grid md:grid-cols-2 gap-8">
         <motion.div
@@ -30,36 +30,36 @@ export function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="bg-zinc-900 border-zinc-800">
+          <Card className="h-full bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
             <CardHeader>
-              <CardTitle>Let&apos;s Connect</CardTitle>
+              <CardTitle>Let's Connect</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
-                <Mail className="h-5 w-5 text-zinc-400" />
+                <Mail className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
                 <a
                   href="mailto:varalika.agarwal16@gmail.com"
-                  className="text-zinc-400 hover:text-white transition-colors"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors break-all"
                 >
                   varalika.agarwal16@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-4">
-                <Phone className="h-5 w-5 text-zinc-400" />
+                <Phone className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
                 <a
                   href="tel:+918076262217"
-                  className="text-zinc-400 hover:text-white transition-colors"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
                 >
                   +91 8076262217
                 </a>
               </div>
               <div className="flex items-center space-x-4">
-                <Github className="h-5 w-5 text-zinc-400" />
+                <Github className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
                 <a
                   href="https://github.com/VaralikaAg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-zinc-400 hover:text-white transition-colors"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
                 >
                   github.com/VaralikaAg
                 </a>
@@ -72,7 +72,7 @@ export function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Card className="bg-zinc-900 border-zinc-800">
+          <Card className="h-full bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
             </CardHeader>
