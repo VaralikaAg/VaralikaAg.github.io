@@ -32,7 +32,7 @@ export function Contact() {
         >
           <Card className="h-full bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800">
             <CardHeader>
-              <CardTitle>Let's Connect</CardTitle>
+              <CardTitle>Let&apos;s Connect</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">

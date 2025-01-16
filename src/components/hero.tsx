@@ -17,10 +17,11 @@ export function Hero() {
         <h1 className="text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
           Hi,
           <br />
-          I'm Varalika,
+          I&apos;m Varalika,
           <br />
           <span className="text-zinc-500">Mathematics & Computing Student</span>
         </h1>
+
         <p className="mt-4 max-w-2xl text-zinc-600 dark:text-zinc-400">
           IDD student at IIT BHU with a passion for Image Processing, InfoSec,
           and Frontend Development.
